@@ -14,8 +14,8 @@ header{
 }
 
 .logo-img{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 body, html {
@@ -40,11 +40,16 @@ body, html {
 }
 
 .img-galery{
-    width: 450px;
-    height: 300px;
+    width: 30%;
+    height: 260px;
     border-radius: 10px;
     margin-top: 50px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease
 }
+.img-galery:hover {
+    transform: scale(1.2); /* Agranda la imagen al 120% de su tamaño original */
+  }
 
 /* Estilo general de la barra de desplazamiento */
 ::-webkit-scrollbar {
@@ -67,11 +72,34 @@ body, html {
     background: #555; /* Color del thumb al pasar el mouse */
 }
 
-
+.div-autor{ 
+    align-self: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    background: #1abc9c;
+    width: 250px;
+    height: 200px;
+    margin-top: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
 
 footer{
     margin-top: 60px;
     background-color: #1abc9c;   
     width: 100%;
     height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.h3-footer{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
